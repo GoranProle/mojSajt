@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Proletov video</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/java.js"></script>
+</head>
+
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html">Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo dugme koje omogucava da slide-show bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="button" />
+	
+	<div class="video0" style="text-align:center">
+		<button onClick="playPause()">Play/Pause</button>
+		<button onClick="makeBig()">Veliki</button>
+		<button onClick="makeSmall()">Mali</button>
+		<button onClick="makeNormal()">Srednji</button>
+		<p>
+		<video id="video1" width="930" controls>
+			<source src="video/Sgt. Pepper's & With a Little Help.mp4" type="video/mp4">
+			Vaš browser ne podržava HTML5 video.
+		</video><br>
+		<!-- Volume kontrola se dodaje ispod videa -->
+		<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolumeVideo(this.value)"
+			onchange="SetVolumeVideo(this.value)"></input>
+	
+		<!-- Logo -->
+		<table id="logo" align="center" style="margin-top: -5px">
+			<tr>
+				<td><img src="images/squirrel_black_24.png"/></td>
+				<td style="font-size: 11px">bracan software © 2018</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

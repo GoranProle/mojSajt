@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Proletov drag & drop</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/java.js"></script>
+</head>
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html">Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo dugme koje omogucava da slide-show bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="button" />
+
+	<div class="dragDrop" style="text-align:center">
+		<h2>Drag and Drop</h2>
+		<p>Prevuci lokomotivu u polje u koje želiš i ostavi je tamo!</p>
+
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<br>
+		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<br>
+		<img id="drag1" src="images/locomotive_02.jpg" draggable="true" ondragstart="drag(event)" width="228" height="110">
+	</div>
+
+	<!-- Logo -->
+	<footer>	
+		<div id="logo">
+			<table align="center">
+				<tr>
+					<td><img src="images/squirrel_black_24.png"/></td>
+					<td style="font-size: 11px; margin-top: -5px">bracan software © 2018</td>
+				</tr>
+			</table>
+		</div>
+	</footer>	
+</body>
+</html>

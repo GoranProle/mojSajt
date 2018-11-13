@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Proletov audio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/java.js"></script>
+</head>
+
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html">Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo dugme koje omogucava da slide-show bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="button" />
+
+	<div class="audio0" style="text-align:center">
+		<a href="audio_gp.html" title="prehodna pesma"><i class="fa fa-arrow-left" style="font-size:30px;"></i></a>
+		<a href="audio_03_gp.html" title="sledeća pesma"><i class="fa fa-arrow-right" style="font-size:30px;"></i></a>
+		<h4>David Bowie - "Underground"</h4><p>
+		<audio id="audio1" controls>
+			<source src="music/Underground.mp3" type="audio/mpeg">
+			Vaš browser ne podržava HTML5 audio.<p>
+	
+			<!-- Volume kontrola se dodaje ispod videa -->
+			<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolumeAudio(this.value)"
+				onchange="SetVolumeAudio(this.value)"></input><p><br>		
+	
+			<!-- Tekst pesme -->
+			<div class="tekstPesme">
+				No one can blame you<br>
+				for walking away<br>
+				But too much rejection, uh-huh<br>
+				No love injection, nothing<p>
+				
+				Life can be easy<br>
+				It's not always swell<br>
+				Don't tell me truth hurts, little girl<br>
+				'Cause it hurts like hell<p>
+				
+				But down in the underground<br>
+				You'll find someone true<br>
+				Down in the underground<br>
+				A land serene, a crystal moon<br>
+				A-ha<p>
+				
+				It's only forever<br>
+				Not long at all<br>
+				Lost and lonely<br>
+				That's underground.<br>
+				Underground.<p>
+				
+				Daddy, daddy, get me out of here.<br>
+				(Heard about a place today.)<br>
+				I, I'm underground.<br>
+				(Nothing ever hurts again.)<br>
+				Heard about a place today.<br>
+				(Daddy, get me out of here)<br>
+				Where nothing ever hurts again.<br>
+				(Where nothing ever hurts again.)<br>
+				Daddy, daddy, get me out of here<br>
+				I, I'm underground.<br>
+				Sister, sister, please take me down.<br>
+				I, I'm underground.<br>
+				Daddy, daddy, get me out of here.<p>
+				
+				No one can blame you<br>
+				For walking away.<br>
+				Too much rejection.<br>
+				No love injection.<p>
+
+				Down in the underground<br>
+				You'll find someone true.<br>
+				Down in the underground<br>
+				A land serene, a crystal moon.<br>
+				Ah.<p>
+
+				It's only.<br>
+				It's only forever.<br>
+				It's not long at all.<br>
+				Lost and lonely.<br>
+				That's underground.<br>
+				Underground.<p>
+
+				Daddy, daddy, get me out of here.<br>
+				Heard about a place today.<br>
+				Nothing never hurts again.<br>
+				Daddy, daddy, get me out of here.<br>
+				I'm, I'm underground.<br>
+				Sister, sister, please take me down.<br>
+				I'm, I'm underground.<br>
+				Daddy, daddy, get me out.<br>
+				Wanna live underground.<br>
+				Wanna live underground.<br>
+				Wanna live underground.<br>
+				Wanna live underground.<br>
+				Wanna live underground.<br>
+				Wanna live underground.<br>
+				Wanna live underground.<br>
+				Wanna live underground.<br>
+				Daddy, daddy, get me out of here.<br>
+				I'm, I'm underground.<br>
+				Sister, sister please take me down.<br>
+				I, I'm underground.<br>
+				I, I'm underground.<br>
+				I, I'm underground.<br>
+				Daddy, daddy, get me.<br>
+				Daddy, daddy, get me.<br>
+				Wanna live underground.<br>
+				Sister, sister, take me down.<p>
+			</div>
+		</audio>
+		
+		<!-- Logo -->
+		<table id="logo" align="center" style="margin-bottom: -15px">
+			<tr>
+				<td><img src="images/squirrel_black_24.png"/></td>
+				<td style="font-size: 11px">bracan software © 2018</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

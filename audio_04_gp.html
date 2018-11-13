@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Proletov audio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/java.js"></script>
+</head>
+
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html">Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo dugme koje omogucava da slide-show bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="button" />
+
+	<div class="audio0" style="text-align:center">
+		<a href="audio_03_gp.html" title="prehodna pesma"><i class="fa fa-arrow-left" style="font-size:30px;"></i></a>
+		<a href="audio_05_gp.html" title="sledeća pesma"><i class="fa fa-arrow-right" style="font-size:30px;"></i></a>
+		<h4>Domenico Modugno - "Nel blu dipinto di blu (Volare)"</h4><p>
+		<audio id="audio1" controls>
+			<source src="music/Nel blu dipinto di blu (Volare).mp3" type="audio/mpeg">
+			Vaš browser ne podržava HTML5 audio.<p>
+	
+			<!-- Volume kontrola se dodaje ispod videa -->
+			<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolumeAudio(this.value)"
+				onchange="SetVolumeAudio(this.value)"></input><p><br>		
+	
+			<!-- Tekst pesme -->
+			<div class="tekstPesme">
+				Penso che un sogno così non ritorni mai più<br>
+				Mi dipingevo le mani e la faccia di blu<br>
+				Poi d'improvviso venivo dal vento rapito<br>
+				E incominciavo a volare nel cielo infinito<p>
+				 
+				Volare, oh oh...<br>
+				Cantare, ohohoho...<br>
+				Nel blu dipinto di blu<br>
+				Felice di stare lassù<p>
+				 
+				E volavo, volavo felice<br>
+				Più in alto del sole ed ancora più su<br>
+				Mentre il mondo pian piano spariva, lontano laggiù<br>
+				Una musica dolce suonava soltanto per me<p>
+				 
+				Volare, oh oh...<br>
+				Cantare, ohohoho...<br>
+				Nel blu dipinto di blu<br>
+				Felice di stare lassù<p>
+				 
+				Ma tutti i sogni nell'alba svaniscono perché<br>
+				Quando tramonta, la luna li porta con sé<br>
+				Ma io continuo a sognare negli occhi tuoi belli<br>
+				Che sono blu come un cielo trapunto di stelle<p>
+				 
+				Volare, oh oh...<br>
+				Cantare, ohohoho...<br>
+				Nel blu degli occhi tuoi blu<br>
+				Felice di stare quaggiù<p>
+				 
+				E continuo a volare felice<br>
+				Più in alto del sole ed ancora più su<br>
+				Mentre il mondo pian piano scompare negli occhi tuoi blu<br>
+				La tua voce è una musica dolce che suona per me<p>
+				 
+				Volare, oh oh...<br>
+				Cantare, ohohoho...<br>
+				Nel blu degli occhi tuoi blu<br>
+				Felice di stare quaggiù<p>
+				 
+				Nel blu degli occhi tuoi blu<br>
+				Felice di stare quaggiù con te
+			</div>
+		</audio>
+		
+		<!-- Logo -->
+		<table id="logo" align="center" style="margin-bottom: -15px">
+			<tr>
+				<td><img src="images/squirrel_black_24.png"/></td>
+				<td style="font-size: 11px">bracan software © 2018</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

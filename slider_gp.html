@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Proletov slajder</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/java.js"></script>
+</head>
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html">Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo dugme koje omogucava da slide-show bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="button" />
+	
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+		<!-- Full-width images with number and caption text -->
+		<div id="slide1" class="mySlides fade">
+			<div class="numbertext">1 / 8</div>
+				<img src="images/skiathos_01.jpg" style="width:100%">
+			<div class="text">Skijatos, Grčka</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 8</div>
+				<img src="images/skiathos_02.jpeg" style="width:100%">
+			<div class="text">Skijatos, kafana koje više nema</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 8</div>
+				<img src="images/skiathos_08.jpg" style="width:100%">
+			<div class="text">Skijatos, kafana koje više nema</div>
+		</div>		
+		
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 8</div>
+				<img src="images/skiathos_03.jpg" style="width:100%">
+			<div class="text" style="text-align: right">Skijatos, stara luka</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext" style="color:black">5 / 8</div>
+				<img src="images/skiathos_04.jpg" style="width:100%">
+			<div class="text" style="color:black">Skijatos, stara luka</div>
+		</div>
+		
+		<div class="mySlides fade">
+			<div class="numbertext">6 / 8</div>
+				<img src="images/skiathos_05.jpg" style="width:100%">
+			<div class="text">Skijatos, stara luka</div>
+		</div>
+		
+		<div class="mySlides fade">
+			<div class="numbertext">7 / 8</div>
+				<img src="images/skiathos_06.jpg" style="width:100%">
+			<div class="text">Skijatos, plaža Lalarija</div>
+		</div>		
+
+		<div class="mySlides fade">
+			<div class="numbertext">8 / 8</div>
+				<img src="images/skiathos_09.jpg" style="width:100%">
+			<div class="text" style="top: 0; text-align: right">Skijatos, panorama</div>
+		</div>		
+		
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div> 
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+		<span class="dot" onclick="currentSlide(6)"></span>
+		<span class="dot" onclick="currentSlide(7)"></span>
+		<span class="dot" onclick="currentSlide(8)"></span>
+	</div>
+</body>
+</html>

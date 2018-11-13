@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Proletov audio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/java.js"></script>
+</head>
+
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html">Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo dugme koje omogucava da slide-show bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="button" />
+
+	<div class="audio0" style="text-align:center">
+		<a href="audio_02_gp.html" title="sledeća pesma"><i class="fa fa-arrow-right" style="font-size:30px;"></i></a>
+		<h4>Oasis - "Roll With It"</h4><p>
+		<audio id="audio1" controls>
+			<source src="music/Roll With It.mp3" type="audio/mpeg">
+			Vaš browser ne podržava HTML5 audio.<p>
+	
+			<!-- Volume kontrola se dodaje ispod videa -->
+			<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolumeAudio(this.value)"
+				onchange="SetVolumeAudio(this.value)"></input><p><br>		
+	
+			<!-- Tekst pesme -->
+			<div class="tekstPesme">
+				You gotta roll with it<br>
+				You gotta take your time<br>
+				You gotta say what you say<br>
+				Don't let anybody get in your way<br>
+				'Cause it's all too much for me to take<p>
+				
+				Don't ever stand aside<br>
+				Don't ever be denied<br>
+				You wanna be who you'd be<br>
+				If you're coming with me<p>
+				
+				I think I've got a feeling I've lost inside<br>
+				I think I'm gonna take me away and hide<br>
+				I'm thinking of things that I just can't abide<p>
+				
+				I know the roads down which your life will drive<br>
+				I find the key that lets you slip inside<br>
+				Kiss the girl, she's not behind the door<br>
+				But you know I think I recognize your face<br>
+				But I've never seen you before<p>
+				
+				You gotta roll with it<br>
+				You gotta take your time<br>
+				You gotta say what you say<br>
+				Don't let anybody get in your way<br>
+				'Cause it's all too much for me to take<p>
+				
+				I know the roads down which your life will drive<br>
+				I find the key that lets you slip inside<br>
+				Kiss the girl, she's not behind the door<br>
+				But you know I think I recognize your face<br>
+				But I've never seen you before<p>
+				
+				You gotta roll with it<br>
+				You gotta take your time<br>
+				You gotta say what you say<br>
+				Don't let anybody get in your way<br>
+				'Cause it's all too much for me to take<p>
+				
+				Don't ever stand aside<br>
+				Don't ever be denied<br>
+				You wanna be who you'd be<br>
+				If you're coming with me<p>
+				
+				I think I've got a feeling I've lost inside<br>
+				I think I've got a feeling I've lost inside<br>
+				I think I've got a feeling I've lost inside<br>
+				I think I've got a feeling I've lost inside<br>
+				I think I've got a feeling I've lost inside<br>
+				I think I've got a feeling I've lost inside<br>
+				I think I've got a feeling I've lost inside<br>
+				I think I've got a feeling I've lost inside<br>
+			</div>
+		</audio>
+		
+		<!-- Logo -->
+		<table id="logo" align="center" style="margin-bottom: -15px">
+			<tr>
+				<td><img src="images/squirrel_black_24.png"/></td>
+				<td style="font-size: 11px">bracan software © 2018</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
