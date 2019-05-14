@@ -3,13 +3,21 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Proletove lokomotive</title>
+	<title>Proletova parna lokomotiva</title>
 	<link rel="stylesheet" href="css/style.css" />
+	<link href="css/tooltip.css" rel="stylesheet" type="text/css" />
 	<script src="js/java.js"></script>
+	<script src="js/tooltip.js" type="text/javascript"></script>
 </head>
 <body>
 	<ul class="glavni_meni">
-		<li><a href="jz_serija_05_gp.html">Nazad na prethodnu</a></li>
+		<!-- <li><a href="jz_serija_05_gp.html">Nazad na prethodnu</a></li> -->
+		<button class="dugmeZaPovratak" style="border: none;" onclick="goBack()">Nazad na prethodnu</button>
+		<script>
+		function goBack() {
+			window.history.back();
+		}
+		</script>
 	</ul>
 	
 	<!-- Nevidljivo dugme koje omogucava da slide-show bude pomeren od gornje ivice 
@@ -18,20 +26,173 @@
 	
 	<!-- Text container -->
 	<div class="jz-05">
-		<section id="tekst_o_lokomotivama">
-			<article>
-				<p style="font-family: Georgia; font-size: 22px; font-weight: bold;">Parna lokomotiva</p>
-				<hr />
-				<p>
-					<b>Parna lokomotiva</b> je železnička lokomotiva koja za svoj pogon koristi snagu iz parne mašine.
-				</p><p>
-					Ove lokomotive koriste za gorivo neki zapaljiv čvrst materijal, obično je to ugalj, drvo ili koks, a radi dobijanja vodene pare u kotlu, koja pod pritiskom vrši mehanički rad, odnosno okreće točkove. Čvrsto gorivo i zalihe vode se prenose sa lokomotivom, na samoj lokomotivi ili na vagonima koje vuče za sobom.
-				</p><p>
-					Parne lokomotive su prvo razvijene u Velikoj Britaniji tokom ranog 19. veka i dominirale su železničkim prevozom do sredine 20. veka.
-				</p><p>
-					Od 1920-ih su postepeno zamenjivane dizel i električnim lokomotivama.
-				</p>
-			</article>
-		</section>
+		<p style="font-family: Georgia; font-size: 22px; font-weight: bold;">Parna lokomotiva</p><hr /><p>
+		<div id="sredina">
+			<section id="tekst_o_lokomotivama">
+				<article>
+					<b>Parna lokomotiva</b> je železnička lokomotiva koja za svoj pogon koristi snagu iz 
+					<a href="#" class="tooltip" >parne mašine.
+						<span class="tooltiptext">
+							<img src="images/Steam_engine_in_action.gif" style="margin-bottom:7px; max-width: 400px" />
+							<b>Parna (klipna) mašina</b>, ili <em>parni stroj (parostroj)</em> predstavlja motor koji transformiše toplotnu energiju
+							vodene pare u rad, najčešće rotaciono kretanje. Spada u grupu klipnih toplotnih motora sa spoljašnjim sagorevanjem. Parne
+							mašine su se koristile kao pogon pumpi, parnih lokomotiva, parobroda i parnih traktora, te su bile temelj industrijske
+							revolucije.
+							<i></i>
+						</span>
+					</a>
+					</p><p style="line-height: 1.4;">
+					Ove lokomotive koriste za gorivo neki zapaljiv čvrst materijal, obično je to 
+					<span class="tooltip" onmouseover="tooltip.pop(this, '#tip2_01');" alt="" />ugalj</span>,
+					drvo ili 
+					<span class="tooltip" onmouseover="tooltip.pop(this, '#tip2_02');" alt="" />koks</span>.
+					a radi dobijanja vodene pare u kotlu, koja pod pritiskom vrši 
+					<span class="tooltip" onmouseover="tooltip.pop(this, '<b>Rad</b> u fizici je prenos energije iz jednog sistema u drugi. Ovaj prenos se u klasičnoj mehanici vrši delivanjem sile duž nekog puta. Rad je ustvari jednak proizvodu sile i perđenog puta, ako sila deluje u pravcu pomeranja tela.')">mehanički rad</span>, odnosno okreće točkove. Čvrsto gorivo i zalihe vode se prenose sa lokomotivom, na samoj lokomotivi ili na vagonima koje vuče za sobom.
+					</p><p style="line-height: 1.4;">
+						Parne lokomotive su prvo razvijene u Velikoj Britaniji tokom ranog 19. veka i dominirale su železničkim prevozom do sredine 20. veka. Prvu parnu lokomotivu
+						izradio je 
+						<span class="tooltip" onmouseover="tooltip.pop(this, '#tip2_03');" alt="" />Ričard Trevitik</span>
+						, koja je prvi put upotrebljena 21. februara 1804. godine, tri godine nakon što je 1801. napravio cestovnu lokomotivu. Prva 
+						komercijalo uspešna parna lokomotiva nastala je 1812-13 zaslugom Džona Blenkinsopa.
+						<a name="1_referenca"></a><sup><span style="font-size: 10px"><a href="#prva_referenca" title="120 godina pruge Beograd-Niš. &#13;Železnice Srbije.">[1]
+						</a></span></sup> 
+						<a href="georgeStephenson.html">
+						<span class="tooltip" onmouseover="tooltip.pop(this, '#tip2_04');" alt="" />Džordž Stivenson</span></a> 
+						i kompanija njegovog sina Roberta su proizveli Lokomotivu Br. 1, koja je bila prva lokomotiva za prevoz putnika na javnoj železničkoj liniji, Stokton i Darlington železnice 1825. godine.
+						<a name="2_referenca"></a><sup><span style="font-size: 10px"><a href="#druga_referenca" title="120 godina pruge Beograd-Niš. &#13;Železnice Srbije.">[2]
+						</a></span></sup>
+						Džordž je isto tako izgradio prvu međugradsku železničku liniju na svetu sa upotrebom lokomotiva, Liverpul i Mančester železnica, koja je otvorena 1830. godine. Stivenson je osnovao svoju kompaniju kao istaknuti graditelj parnih lokomotiva za železnice u Ujedinjenom Kraljevstvu, Sjedinjenim Državama i većem delu Evrope.
+						<a name="3_referenca"></a><sup><span style="font-size: 10px"><a href="#treca_referenca" title="120 godina pruge Beograd-Niš. &#13;Železnice Srbije.">[3]
+						</a></span></sup>
+					</p><p style="line-height: 1.4;">
+						U 20. veku, glavni mašinski inženjer Londonske i severoistočne železnice (LNER) 
+						<span class="tooltip" onmouseover="tooltip.pop(this, '#tip2_05');" alt="" />Najdžel Gresli</span></a> 
+						dizajnirao je više poznatih lokomotiva, uključujući 
+						<a href="flyingScotsman.html" class="tooltip" >Letećeg Škotlanđanina,
+							<span class="tooltiptext">
+								<img src="images/1280px-Kentford_-_60103_climbing_towards_Minehead.JPG" style="margin-bottom:7px; max-width: 270px" />
+								<b>LNER Class A3 4472 <em>Flying Scotsman</em></b> je parna lokomotiva napravljena 1923. godine. Konstruisao ju je Najdžel Gresli. Korišćena je za 
+								ekspresne međugradske vozove, posebno na liniji London - Edinburg zbog koje je i naz-vana Leteći Škotlanđanin...
+								<i></i>
+							</span>
+						</a>
+						prvu parnu lokomotivu koja se zvanično kretala brzinom preko 100 mph u putničkom servisu, i 
+						<a href="mallard.html" class="tooltip" >LNER Class A4 4468 Mallard, 
+							<span class="tooltiptext">
+								<img src="images/1280px-Number_4468_Mallard_in_York.jpg" style="margin-bottom:7px; max-width: 290px" />
+								<b>LNER Class A4 4468 <em>Mallard</em></b> je parna lokomoti-va napravljena 1938. godine u fabrici Doncaster Works u Engleskoj. Drži zvanični svetski rekord u brzini kada su u pitanju parne lokomotive, koji iznosi 126 milja na sat (203 km/h)...
+								<i></i>
+							</span>
+						</a>
+						koja drži rekord najbrže parne lokomotive na svetu (126 mph).
+						<a name="4_referenca"></a><sup><span style="font-size: 10px"><a href="#cetvrta_referenca" title="120 godina pruge Beograd-Niš. &#13;Železnice Srbije.">[4]
+						</a></span></sup>
+					</p><p style="line-height: 1.4;">
+						Od 1920-ih su postepeno zamenjivane dizel i električnim lokomotivama, uz postepenu konverziju koloseka za upotrebu električnog i dizel pogona počevši od 
+						kraja 1930-ih. Većina parnih lokomotiva je povučena iz redovne službe di 1980-ih, mada se nekoliko njih i dalje koristi na turističkim linijama.
+					</p>
+
+					<p style="font-family: Georgia; font-size: 18px; font-weight: bold;"><a name="cetvrti_pasus"></a>Izvori</p>
+						<hr />
+						<ol style="font-size: 12.5px;">
+							<li>↑<a name="prva_referenca"></a>
+							<sup><span style="font-size: 10px"><a href="#1_referenca">1</a></span></sup>
+								„John Blenkinsop - English inventor”<a href="https://www.britannica.com/biography/John-Blenkinsop"><img src="images/idiNaSajt.jpg" alt="" style="cursor: pointer;"></a>.</li>
+							<li>↑<a name="druga_referenca"></a>
+							<sup><span style="font-size: 10px"><a href="#2_referenca">2</a></span></sup>
+								  Kirby, Maurice W. (2002). The Origins of Railway Enterprise: The Stockton and Darlington Railway 1821–1863<a href="https://books.google.rs/books?id=xVY1VL-rA1gC&redir_esc=y"><img src="images/idiNaSajt.jpg" alt="" style="cursor: pointer;"></a>. Cambridge University Press. ISBN 978-0-521-89280-3.</li>		
+							<li>↑<a name="treca_referenca"></a>
+							<sup><span style="font-size: 10px"><a href="#3_referenca">3</a></span></sup>
+								Ellis, Hamilton (1968). The Pictorial Encyclopedia of Railways. pp. 24-30. Hamlyn Publishing Group.</li>	
+							<li>↑<a name="cetvrta_referenca"></a>
+							<sup><span style="font-size: 10px"><a href="#4_referenca">4</a></span></sup>
+								"Magnificent Mallard: World's fastest steam locomotive". <a href="https://www.bbc.com/news/av/uk-23158002/magnificent-mallard-world-s-fastest-steam-locomotive"><img src="images/idiNaSajt.jpg" alt="" style="cursor: pointer;"></a>BBC. 17 February 2018</li>		 
+						</ol>
+
+					<!-- Tooltipovi -->
+					<div style="display:none;">
+						<div id="tip2_01">
+							<img src="images/coal.jpg" style="float:right;margin-left:12px;margin-top:-12px;max-width:200px;" alt="" />
+							<!-- <h3>Allows any HTML content</h3> // mogu se po potrebi dodavati headeri, paragrafi, šta god...-->
+							<p><b>Ugalj</b> je crna ili crno-smeđa sedimentna stena organskog porekla koja ima sposobnost gorenja, pa se koristi kao fosilno gorivo 
+								koje se vadi iz zemlje rudarskim metodama. Sastoji se primarno od ugljenika i ugljovodonika, ali i drugih supstnci.
+							</p>
+							</p>
+						</div>
+						<div id="tip2_02">
+							<img src="images/Koks_Brennstoff.jpg" style="float:right;margin-left:12px;margin-top:-12px;max-width:200px;" alt="" />
+							<p><b>Koks</b> je visokokalorično veštačko čvrsto gorivo, dobijeno suvom destilacijom kamenog uglja ili lignita, uz potpuni ili 
+								delimični nedostatak vazduha. Koks je tvrda, porozna (šupljikava) tvar, proizvedena grejanjem uglja do visoke temperature bez
+								pristupa vazduha, a koristi se u proizvodnji gvožđa i čelika u visokim pećima.
+							</p>
+						</div>
+						<div id="tip2_03">
+							<img src="images/Trevithick_Richard_Linnell.jpg" style="float:right;margin-left:12px;margin-top:-12px;max-width:200px;" alt="" />
+							<div style="padding:0px;width:400px;height:300px;">
+								<p><b>Ričard Trevitik</b>  (engl. <i>Richard Trevithick</i>; Kornvol 13. april 1771 - Kent 22. april 1833) bio je britanski pronalazač i
+									rudarski inženjer iz Kornvola, jednog od vodećih rudarskih krajeva tog doba. Trevitik je još od rane mladosti bio upućen u rudarstvo
+									i inženjering. Sin lokalnog rudarskog šefa, postao je jedan od pionira i osnivača drumskog i železničkog saobraćaja na parni pogon. 
+									Njegov najznačajniji doprinos je razvoj prve parne mašine visokog pritiska, a takođe je izgradio i prvu potpunu radno sposobnu železnučku
+									parnu lokomotivu, koja je 21. februara 1804. bila prva lokomotiva u svetu koja je izvukla železničkom prugom teret duž deonice od rudnika
+									gvožđa do obližnje  željezare u Velsu.
+								</p>
+							</div>
+						</div>		
+						<div id="tip2_04">
+							<img src="images/George_Stephenson_-_Project_Gutenberg_etext_13103.jpg" style="float:right;margin-left:12px;margin-top:-12px;max-width:150px;" alt="" />
+							<div style="padding:0px;width:370px;height:190px;">
+								<p><b>Džordž Stivenson</b> (engl. <i>George Stephenson</i>; Vajlam 9. jun 1781 - London 26. decembar 1848), engleski inženjer i pronalazač.
+									Stivensonova lokomotiva vukla je 27. septembra 1825. na pruzi Stokton - Darlington prvi putnički voz na svetu. Lokomotiva je vukla 12 teretnih kola i 22 kola sa putnicima. U vozu je bilo čak 450 putnika i to je bio prvi prevoz putnika železnicom...
+								</p>
+							</div>
+						</div>			
+						<div id="tip2_05">
+							<img src="images/H_N_Gresley.jpg" style="float:right;margin-left:12px;margin-top:-12px;max-width:150px;" alt="" />
+							<div style="padding:0px;width:370px;height:270px;">
+								<p><b>Ser Herbert Najdžel Gresli</b> (19. juni 1876 - 5. april 1941), britanski železnički inženjer. Jedan je od najpoznatijih konstruktora 
+									parnih lokomotiva, postao je glavni mašinski inženjer (<em>Chief Mechanical Engineer - CME</em>) Londonskih i severoistočnih želelznica 
+									<em>(LNER)</em>. Konstruisao je neke od najpoznatijih parnih lokomotiva u Britaniji, uključujući <em>LNER Class A1</em> i <em>LNER Class A4 4-6-2 Pacific</em>. <em><b>A1 Pacific, Flying Scotsman</b></em> bila je prva parna lokomotiva koja je zvanično vozila brže od 100 milja na sat, a <em><b>4468 Mallard</b></em> još drži rekord najbrže parne lokomotive na svetu (126 milja na sat).
+								</p>
+							</div>
+						</div>			
+						<!-- <div id="tip3">
+							<img src="src/tooltip-head.jpg" />
+							<div style="padding:20px;">
+								<h1>Easy to Config</h1>
+								<p>The tooltip can display with different display modes and styles by configuring the options in the <em>tooltip.js</em>, or passing the options to the tooltip.pop() call if you only need the options apply to an individual element.</p>
+							</div>
+						</div> -->
+					</div>
+				</article>
+			</section>
+			<aside>
+				<div id="okvir" style="width: 410px; height: 270px; border: 1px solid black; padding: 4px; margin-top: -18px;">
+					<img src="images/41018_Schiefe_Ebene_Nov_5_2016.jpg" style="max-width: 400px; margin-bottom: -13px;" />
+					<p style="font-size: 13px; text-align: center;"><i>Lokomotiva klase 41 018 Nemačke nacionalne železnice,<br>na usponu, 2016.</i></p>
+				</div>
+				<div id="okvir" style="width: 410px; height: 180px; border: 1px solid black; padding: 4px; margin-top: 5px;">
+					<img src="images/King_Edward_I_6024_Didcot_(4).jpg" style="max-width: 400px; margin-bottom: -13px;" />
+					<p style="font-size: 13px; text-align: center;"><i>Britanska parna lokomotiva klase "King"</i></p>
+				</div>
+				<div style="border: 1px solid black;margin-top: 5px;">
+					<div class="audio1" style="text-align: center;">
+						<audio id="audio2" controls="controls">
+							<source src="sound/6024_Lickey_Bank.ogg" type="audio/ogg">
+							Vaš browser ne podržava HTML5 audio.
+		
+							<!-- Volume kontrola se dodaje ispod audia -->
+							<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolumeAudio(this.value)"
+								onchange="SetVolumeAudio(this.value)"></input>	
+						</audio>
+					</div>
+					<p style="font-size: 13px;text-align: center;"><i>Zvuk parne lokomotive klase "King"</i></p>
+				</div>
+			</aside>
+		</div>
+
+		<footer id="footer">
+			<hr />
+			<p style="margin-top: -5px; margin-bottom: -10px;text-align: center"><img src="images/logo_prole_software_2019.jpg"/></p>	
+		</footer>
 	</div>
 </body>	
