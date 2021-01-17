@@ -87,7 +87,7 @@ jQuery(document).ready(function($) {
     	var a = setInterval(function(){
     		vreme--;
     		if (vreme === 0 || kraj === 18) {
-    			boksovi.unbind(); //boksovi.off();
+    			boksovi.off();
     			clearInterval(a);
     			if (kraj === 18) {
     				$('.dugmic').text('Nova igra - Nivo 5');
@@ -138,7 +138,7 @@ jQuery(document).ready(function($) {
 				klikni--;
 			} else {	
 				if (klikni === 2) {
-					boksovi.unbind(); //boksovi.off();
+					boksovi.off();
 					if ((okrenute[0].html().substring(90,92) === okrenute[1].html().substring(90,92)) &&
 						(okrenute[0].html().substring(92,93) !== okrenute[1].html().substring(92,93)) ||
 						(okrenute[0].html().substring(94,96) === okrenute[1].html().substring(94,96)) &&
