@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<!-- Website Design By: www.happyworm.com -->
+<title>Proletov audio 2</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="dist/skin/pink.flag/css/jplayer.pink.flag.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="dist/jplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="dist/add-on/jplayer.playlist.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		{
+			title:"A Song For Jeffrey",
+			mp3:"music/LivingPast/01-A Song For Jeffrey.mp3"
+			// mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+			// oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
+		},
+		{
+			title:"Love Story",
+			mp3:"music/LivingPast/02-Love Story.mp3"
+		},
+		{
+			title:"Christmas Song",
+			mp3:"music/LivingPast/03-Christmas Song.mp3"
+		},
+		{
+			title:"Living In The Past",
+			mp3:"music/LivingPast/04-Living In The Past.mp3"
+		},
+		{
+			title:"Driving Song",
+			mp3:"music/LivingPast/05-Driving Song.mp3"
+		},
+		{
+			title:"Bouree",
+			// free:true,
+			// mp3:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
+			// oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg"
+			mp3:"music/LivingPast/06-Bouree.mp3"
+		},
+		{
+			title:"Sweet Dream",
+			mp3:"music/LivingPast/07-Sweet Dream.mp3"
+		},
+		{
+			title:"Singing All Day",
+			mp3:"music/LivingPast/08-Singing All Day.mp3"
+		},
+		{
+			title:"Witch's Promise",
+			mp3:"music/LivingPast/10-Witch's Promise.mp3"
+		},
+		{
+			title:"Inside",
+			mp3:"music/LivingPast/11-Inside.mp3"
+		},
+		{
+			title:"Alive And Well And Living In",
+			mp3:"music/LivingPast/12-Alive And Well And Living In.mp3"
+		},
+		{
+			title:"Just Trying To Be",
+			mp3:"music/LivingPast/13-Just Trying To Be.mp3"
+		}
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "oga, mp3",
+		wmode: "window",
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+});
+//]]>
+</script>
+</head>
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html"><span class="fa fa-home" style="padding-left: 10px;margin-right: 15px;"></span>Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo dugme koje omogucava da prozor bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="button" />
+
+	<div class="audio2" style="margin-top: 50px> <!-- <div class="audio2" style="text-align:center"> -->	
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+		<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player" style="width: 245px">
+			<div class="jp-type-playlist">
+				<div class="jp-gui jp-interface">
+					<div class="jp-volume-controls">
+						<button class="jp-mute" role="button" tabindex="0">mute</button>
+						<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+						<div class="jp-volume-bar" style="width: 210px">
+							<div class="jp-volume-bar-value"></div>
+						</div>
+					</div>
+					<div class="jp-controls-holder">
+						<div class="jp-controls">
+							<button class="jp-previous" role="button" tabindex="0">previous</button>
+							<button class="jp-play" role="button" tabindex="0">play</button>
+							<button class="jp-stop" role="button" tabindex="0">stop</button>
+							<button class="jp-next" role="button" tabindex="0">next</button>
+						</div>
+						<div class="jp-progress" style="width: 203px">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
+							</div>
+						</div>
+						<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+						<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+						<div class="jp-toggles">
+							<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+							<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+						</div>
+					</div>
+				</div>
+				<div class="jp-playlist">
+					<ul>
+						<li>&nbsp;</li>
+					</ul>
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
+		<!-- logo -->
+		<p style="margin-top: 5px; margin-bottom: -19px; text-align: center"><img src="images/logo_prole_software_2019.jpg"/></p>
+	</div>
+
+</body>
+
+</html>

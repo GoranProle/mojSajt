@@ -43,7 +43,7 @@ function playPause() {
 				
 function makeBig() {
 	var myVideo=document.getElementById("video1");
-	myVideo.width=930;
+	myVideo.width=760;
 }
 					
 function makeSmall() {
@@ -53,7 +53,7 @@ function makeSmall() {
 					
 function makeNormal() {
 	var myVideo=document.getElementById("video1");
-	myVideo.width=630;
+	myVideo.width=540;
 }
 
 function SetVolumeVideo(val) {

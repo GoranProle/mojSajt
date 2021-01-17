@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Proletova biblioteka</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html"><span class="fa fa-home" style="padding-left: 10px;margin-right: 15px;"></span>Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo dugme koje omogucava da prozor bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="button" />
+
+	<!-- Text container -->
+	<div class="biblioteka" style="margin-top: 10px">
+		<img src="images/biblioteka.jpg" alt="" style="float: left; padding-right: 20px;">
+		<p style="float: left; margin-left: 70px;">Java program <span style="font-weight: bold;">BIBLIOTEKA</span></p><br><br>
+		<p style="text-indent: 20px">Ovo je klasičan program za upravljanje bibliotekom, što podrazumeva: evidentiranje knjiga sa svim relevantnim podacima, 
+			njihovo lako pronalaženje i informaciju o tome da li su trenutno na raspolaganju, zatim evidentiranje članova, brzo i lako
+			zaduživanje i razduživanje knjigama, praćenje zaduženja, uvid u kašnjenja sa vraćanjem knjiga, slanje opomena ako je 
+			potrebno, kao i finansijski deo posla koji podrazumeva naplatu članarine, naplatu kazni zbog kašnjenja, pregled dnevne blagajne...</p>
+		<p style="text-indent: 20px">Pravila koja važe u biblioteci, kao što su iznos članarine, dozvoljeni broj knjiga koje član može da zaduži, dužina perioda u kome 
+			je član u obavezi da vrati preuzete knjige, visina kazne koja se naplaćuje u slučaju kašnjenja itd. nisu predefinisana nego ih
+			definiše i po potrebi menja menadžer biblioteke.</p>
+		<p style="text-indent: 20px">Osnovna verzija ovog programa je <i>client-server</i> aplikacija, korisi <i>MySQL</i> bazu podataka, sastoji se od verzije koju
+			koristi jedan ili više službenika biblioteke, kojima su dostupne sve operacije potrebne za rad sa knjigama i članovima i od verzije koja je namenjena
+			članovima biblioteke i koja im omogućava laku pretragu knjiga bilo po njihovom nazivu, imenu autora ili bilo kojoj reči koja je deo
+			naziva ili imena autora i informaciju o tome da li je knjiga na raspolaganju ili je već zauzeta.</p>
+		<p style="text-indent: 20px">Ovde možete preuzeti <i>single user</i> varijantu koja koristi <i>Java Derby</i> bazu podataka i koja je namenjena samo jednom 
+		korisniku, da biste se upoznali sa samim programom.</p>
+		Način instaliranja:<br>
+		<p>	1. Raspakujte <i>ZIP</i> fajl u <span style="font-weight: bold;">root</span> vašeg uređaja <br>
+			2. U folderu <span style="font-weight: bold;">biblioteka</span> pronađite fajl <span style="font-weight: bold;">Biblioteka1.2.jar</span><br>
+			3. Dvostrukim klikom na ovaj fajl pokrenućete program</p>
+		<p>Nadam se da će vam se dopasti</p><br> 
+		<a href="_download/biblioteka.zip" download>
+			<button type="button" style="margin-left: 130px; cursor: pointer;">Download</button>
+		</a>
+		
+	</div>
+	
+</body>
+</html>

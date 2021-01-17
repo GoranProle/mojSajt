@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Proletov audio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="js/java.js"></script>
+</head>
+
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html"><span class="fa fa-home" style="padding-left: 10px;margin-right: 15px;"></span>Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo dugme koje omogucava da prozor bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="button" />
+
+	<div class="audio0" style="text-align:center; margin-top: 50px">
+		<a href="audio_04_gp_old.html" title="prehodna pesma"><i class="fa fa-arrow-left" style="font-size:30px;"></i></a>
+		<a href="audio_06_gp_old.html" title="sledeća pesma"><i class="fa fa-arrow-right" style="font-size:30px;"></i></a>
+		<h4>Arsen Dedić - "Nećeš biti sama"</h4><p>
+		<audio id="audio1" controls>
+			<source src="music/Neces biti sama.mp3" type="audio/mpeg">
+			Vaš browser ne podržava HTML5 audio.<p>
+	
+			<!-- Volume kontrola se dodaje ispod videa -->
+			<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolumeAudio(this.value)"
+				onchange="SetVolumeAudio(this.value)"></input><p><br>		
+	
+			<!-- Tekst pesme -->
+			<div class="tekstPesme">
+				Više nećeš biti sama, tvoju sreću sada čuvam ja,<br>
+				Sjat će sunce iza tama, naš će život biti dio sna.<br> 
+				Više nećeš biti tužna, dođi bliže, kraj je putu tvom.<br> 
+				Tu gdje leže mora južna nakon svega ti si našla dom.<p> 
+
+				Gdje si bila, ptico mala?<br>
+				Sleti mirno na moj dlan.<br>
+				Sve si dane vjetru dala,<br>
+				U mom srcu tvoj je stan.<p>
+
+				Više nećeš biti sama, tvoju sreću sada čuvam ja,<br>
+				Sjat će sunce iza tama, naš će život biti dio sna.<p> 
+
+				Ja ću znati što ti treba,<br>
+				Tako dug je bio let.<br>
+				Poslije praznog, nijemog neba,<br>
+				Ispred tebe stoji svijet.<p> 
+
+				Više nećeš biti sama, tvoju sreću sada čuvam ja,<br>
+				Sjat će sunce iza tama, naš će život biti dio sna.<br>
+				Više nećeš biti tužna, dođi bliže, kraj je putu tvom.<br> 
+				Tu gdje leže mora južna nakon svega ti si našla dom,<br>
+				Nakon svega ti si našla dom,<br>
+				Nakon svega ti si našla dom.<p>
+			</div>
+		</audio>
+		<!-- logo -->
+		<p style="margin-top: 5px; margin-bottom: -19px; text-align: center"><img src="images/logo_prole_software_2018.jpg"/></p>
+	</div>
+</body>
+</html>

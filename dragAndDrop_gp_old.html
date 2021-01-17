@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Proletov drag & drop</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="js/java.js"></script>
+</head>
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html"><span class="fa fa-home" style="padding-left: 10px;margin-right: 15px;"></span>Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo dugme koje omogucava da prozor bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="button" />
+
+	<div class="dragDrop" style="text-align:center;margin-top: 100px">
+		<h2>Drag and Drop</h2>
+		<p>Prevuci lokomotivu u polje u koje želiš i ostavi je tamo!</p>
+
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<br>
+		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<br>
+		<img id="drag1" src="images/locomotive_02.jpg" draggable="true" ondragstart="drag(event)" width="228" height="110" style="cursor: move;">
+	</div>
+	<!-- logo -->
+	<p style="text-align: center; background-color: white; max-width: 600px; height: 30px; margin: 0 auto"><img src="images/logo_prole_software_2018.jpg"/></p>
+</body>
+</html>

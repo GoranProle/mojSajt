@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Proletov audio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="js/java.js"></script>
+</head>
+
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html"><span class="fa fa-home" style="padding-left: 10px;margin-right: 15px;"></span>Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo dugme koje omogucava da prozor bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="button" />
+
+	<div class="audio0" style="text-align:center; margin-top: 50px">
+		<a href="audio_02_gp_old.html" title="prehodna pesma"><i class="fa fa-arrow-left" style="font-size:30px;"></i></a>
+		<a href="audio_04_gp_old.html" title="sledeća pesma"><i class="fa fa-arrow-right" style="font-size:30px;"></i></a>
+		<h4>The Beatles - "Come Together"</h4><p>
+		<audio id="audio1" controls>
+			<source src="music/Come Together.mp3" type="audio/mpeg">
+			Vaš browser ne podržava HTML5 audio.<p>
+	
+			<!-- Volume kontrola se dodaje ispod videa -->
+			<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolumeAudio(this.value)"
+				onchange="SetVolumeAudio(this.value)"></input><p><br>		
+	
+			<!-- Tekst pesme -->
+			<div class="tekstPesme">
+				Here come old flat top<br>
+				He come grooving up slowly<br>
+				He got joo joo eyeball<br>
+				He one holy roller<br>
+				He got hair down to his knee<br>
+				Got to be a joker he just do what you please.<p>
+
+				He wear no shoe shine<br>
+				He got toe jam football<br>
+				He got monkey finger<br>
+				He shoot Coca-Cola<br>
+				He say: "I know you, you know me<br>
+				One thing I can tell you is you got to be free"<br>
+				Come together right now over me<p>
+
+				He bag production<br>
+				He got walrus gumboot<br>
+				He got Ono sideboard<br>
+				He one spinal cracker<br>
+				He got feet down below his knee<br>
+				Hold you in his armchair you can feel his disease<br>
+				Come together right now over me<p>
+
+				Right!<br>
+				Come<br>
+				Come...<br>
+				Come...<br>
+				Come...<p>
+
+				He roller coaster<br>
+				He got early warning<br>
+				He got Muddy Water<br>
+				He one Mojo filter<br>
+				He say: "One and one and one is three"<br>
+				Got to be good looking 'cause he so hard to see<br>
+				Come together right now over me<p>
+
+				Oh!<br>
+				Come together<br>
+				Yeah<br>
+				Come together<br>
+				Yeah<br>
+				Come together<br>
+				Yeah<br>
+				Come together<br>
+				Yeah<br>
+				Come together<br>
+				Yeah<br>
+				Come together<br>
+				Yeah<br>
+				Come together<br>
+				Yeah<br>
+				Ahh<br>
+				Come together<br>
+				Come together...<p>
+			</div>
+		</audio>
+		<!-- logo -->
+		<p style="margin-top: 5px; margin-bottom: -19px; text-align: center"><img src="images/logo_prole_software_2018.jpg"/></p>
+	</div>
+</body>
+</html>

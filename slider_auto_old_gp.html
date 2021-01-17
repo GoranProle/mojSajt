@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Proletov auto-slajder</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="js/java.js"></script>
+</head>
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html"><span class="fa fa-home" style="padding-left: 10px;margin-right: 15px;"></span>Povratak na početnu</a></li>
+	</ul>
+	
+	<!-- Nevidljivo polje koje omogucava da prozor bude pomeren od gornje ivice 
+	(margina se racuna relativno u odnosu na njega) -->
+	<input id="nista" type="text" />
+	
+	<!-- Slideshow container -->
+	<div class="slideshow-container-2" style="margin-top: 150px">
+		<div class="w3-content w3-section">
+			<img class="mySlides w3-animate-fading" src="images/ronda_01.jpg" style="width:100%">
+			<img class="mySlides w3-animate-fading" src="images/ronda_02.jpg" style="width:100%">
+			<img class="mySlides w3-animate-fading" src="images/ronda_03.jpg" style="width:100%">
+			<img class="mySlides w3-animate-fading" src="images/ronda_04.jpg" style="width:100%">
+			<img class="mySlides w3-animate-fading" src="images/ronda_05.jpg" style="width:100%">
+			<img class="mySlides w3-animate-fading" src="images/ronda_06.jpg" style="width:100%">
+			<img class="mySlides w3-animate-fading" src="images/ronda_07.jpg" style="width:100%">
+			<div class="text">Ronda, Španija</div>
+			<!-- logo -->
+			<p style="margin-top: 5px; margin-bottom: -19px; text-align: center"><img src="images/logo_prole_software_2018.jpg"/></p>
+		</div>
+	</div>
+
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+		myIndex++;
+		if (myIndex > x.length) {
+			myIndex = 1
+		}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 9000);    
+}
+	</script>
+
+</body>
+</html>

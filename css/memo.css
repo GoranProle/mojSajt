@@ -1,14 +1,17 @@
-#wrapper, #wrapper2, #wrapper3, #wrapper4 {
+#wrapper, #wrapper2, #wrapper3, #wrapper4, #wrapper5 {
 	border: 20px solid white;
 	background-color: white;
 	position: relative;
-	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.kontejner {
+.kontejnerVeliki {
 	width: 640px;
 	height: 670px;
+}
+.kontejner {
+	width: 480px;
+	height: 480px;
 }
 .kontejnerMali {
 	width: 304px;
@@ -16,9 +19,17 @@
 	border: 2px solid #eee;
 	margin: 0 auto;
 }
-.boks {
+.boksVeliki {
 	width: 100px;
 	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	float: left;
+	position: relative;
+}
+.boks {
+	width: 80px;
+	height: 80px;
 	box-sizing: border-box;
 	border: 1px solid black;
 	float: left;
@@ -32,9 +43,19 @@
 	float: left;
 	position: relative;
 }
-.lice {
+.liceVeliko {
 	width: 100px;
 	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	position: absolute;
+	transform: perspective(200px) rotateY(180deg);
+	backface-visibility: hidden;
+	transition: transform 0.7s linear;
+}
+.lice {
+	width: 80px;
+	height: 80px;
 	box-sizing: border-box;
 	border: 1px solid #eee;
 	position: absolute;
@@ -52,9 +73,19 @@
 	backface-visibility: hidden;
 	transition: transform 0.7s linear;
 }
-.nalicje {
+.nalicjeVeliko {
 	width: 100px;
 	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	border: 1px solid #eee;
+	background: rgb(190,225,47);
+	backface-visibility: hidden;
+	transition: transform 0.7s linear;
+}
+.nalicje {
+	width: 80px;
+	height: 80px;
 	box-sizing: border-box;
 	border: 1px solid #eee;
 	border: 1px solid #eee;
@@ -72,9 +103,19 @@
 	backface-visibility: hidden;
 	transition: transform 0.7s linear;
 }
-.nalicje2 {
+.nalicjeVeliko2 {
 	width: 100px;
 	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	position: absolute;
+	background: rgb(241,97,8);
+	backface-visibility: hidden;
+	transition: transform 0.7s linear;
+}
+.nalicje2 {
+	width: 80px;
+	height: 80px;
 	box-sizing: border-box;
 	border: 1px solid #eee;
 	position: absolute;
@@ -92,9 +133,19 @@
 	backface-visibility: hidden;
 	transition: transform 0.7s linear;
 }
-.nalicje3 {
+.nalicjeVeliko3 {
 	width: 100px;
 	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	position: absolute;
+	background: rgb(70,70,70);
+	backface-visibility: hidden;
+	transition: transform 0.7s linear;
+}
+.nalicje3 {
+	width: 80px;
+	height: 80px;
 	box-sizing: border-box;
 	border: 1px solid #eee;
 	position: absolute;
@@ -112,9 +163,19 @@
 	backface-visibility: hidden;
 	transition: transform 0.7s linear;
 }
-.nalicje4 {
+.nalicjeVeliko4 {
 	width: 100px;
 	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	position: absolute;
+	background: rgb(187,49,23);
+	backface-visibility: hidden;
+	transition: transform 0.7s linear;
+}
+.nalicje4 {
+	width: 80px;
+	height: 80px;
 	box-sizing: border-box;
 	border: 1px solid #eee;
 	position: absolute;
@@ -132,6 +193,36 @@
 	backface-visibility: hidden;
 	transition: transform 0.7s linear;
 }
+.nalicjeVeliko5 {
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	position: absolute;
+	background: rgb(22,70,115);
+	backface-visibility: hidden;
+	transition: transform 0.7s linear;
+}
+.nalicje5 {
+	width: 80px;
+	height: 80px;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	position: absolute;
+	background: rgb(22,70,115);
+	backface-visibility: hidden;
+	transition: transform 0.7s linear;
+}
+.nalicjeMalo5 {
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	position: absolute;
+	background: rgb(22,70,115);
+	backface-visibility: hidden;
+	transition: transform 0.7s linear;
+}
 .poruka {
   	text-align: center;
   	margin-top: -20px;
@@ -146,7 +237,7 @@
  	font-size: 12px;
  }
 .naslov {
-	width: 600px;
+	width: 521px;
 	height: 20px;
 	margin-bottom: 4px;
 }
