@@ -140,8 +140,8 @@ jQuery(document).ready(function($) {
 				if (klikni === 2) {
 					boksovi.off();
 
-					console.log(okrenute[0].html().substring(0,99));
-					console.log(okrenute[1].html().substring(0,99));
+					console.log(okrenute[0].html().substring(98,101));
+					console.log(okrenute[1].html().substring(98,101));
 
 					if ((okrenute[0].html().substring(98,100) === okrenute[1].html().substring(98,100)) &&
 						(okrenute[0].html().substring(100,101) !== okrenute[1].html().substring(100,101)) ||
