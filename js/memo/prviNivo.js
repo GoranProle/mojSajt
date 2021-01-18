@@ -139,20 +139,26 @@ jQuery(document).ready(function($) {
 			} else {	
 				if (klikni === 2) {
 					boksovi.off();
+
+					console.log(okrenute[0].html().substring(0,99));
+					console.log(okrenute[1].html().substring(0,99));
+
 					if ((okrenute[0].html().substring(90,92) === okrenute[1].html().substring(90,92)) &&
 						(okrenute[0].html().substring(92,93) !== okrenute[1].html().substring(92,93)) ||
 						(okrenute[0].html().substring(94,96) === okrenute[1].html().substring(94,96)) &&
-						(okrenute[0].html().substring(96,97) !== okrenute[1].html().substring(96,97))) {
+						(okrenute[0].html().substring(96,97) !== okrenute[1].html().substring(96,97)) ||
+						(okrenute[0].html().substring(96,98) === okrenute[1].html().substring(94,96)) &&
+						(okrenute[0].html().substring(98,99) !== okrenute[1].html().substring(96,97))) {
 							switch (true) {
 								case visinaEkrana >= 800 :
-									nedodirljivi.push(okrenute[0].html().substring(90,93),okrenute[1].html().substring(90,93));
+									nedodirljivi.push(okrenute[0].html().substring(96,99),okrenute[1].html().substring(96,99));
 									break;
 								case visinaEkrana < 800 && visinaEkrana >= 600 :	
 									nedodirljivi.push(okrenute[0].html().substring(90,93),okrenute[1].html().substring(90,93));
 									break;
 								default :
 									nedodirljivi.push(okrenute[0].html().substring(94,97),okrenute[1].html().substring(94,97));
-							}		
+							}	
 							klikni = 0;
 							okrenute.length = 0;
 							kraj++;
