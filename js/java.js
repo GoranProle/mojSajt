@@ -56,6 +56,21 @@ function makeNormal() {
 	myVideo.width=540;
 }
 
+function makeBig_old() {
+	var myVideo=document.getElementById("video1");
+	myVideo.width=930;
+}
+					
+function makeSmall_old() {
+	var myVideo=document.getElementById("video1");
+	myVideo.width=320;
+}
+					
+function makeNormal_old() {
+	var myVideo=document.getElementById("video1");
+	myVideo.width=630;
+}
+
 function SetVolumeVideo(val) {
     var player = document.getElementById('video1');
     console.log('Before: ' + player.volume);

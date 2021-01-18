@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
 
 		switch (true) {
 			case visinaEkrana >= 800 :
-				kontejner.append('<div class="boksVeliki"><div class="liceVeliko">'+ slicice[rand] +'</div><div class="nalicjeVeliko4"></div></div>');
+				kontejner.append('<div class="boksVeliki"><div class="licePoveliko">'+ slicice[rand] +'</div><div class="nalicjeVeliko4"></div></div>');
 				break;
 			case visinaEkrana < 800 && visinaEkrana >= 600 :
 				kontejner.append('<div class="boks"><div class="lice">'+ slicice[rand] +'</div><div class="nalicje4"></div></div>');
@@ -120,7 +120,7 @@ jQuery(document).ready(function($) {
 			switch (true) {
 				case visinaEkrana >= 800 :
 					$(this).find('.nalicjeVeliko4').css('transform', 'perspective(200px) rotateY(180deg)');
-					$(this).find('.liceVeliko').css('transform', 'perspective(200px) rotateY(0deg)');
+					$(this).find('.licePoveliko').css('transform', 'perspective(200px) rotateY(0deg)');
 					break;	
 				case visinaEkrana < 800 && visinaEkrana >= 600 :	
 					$(this).find('.nalicje4').css('transform', 'perspective(200px) rotateY(180deg)');
@@ -139,13 +139,15 @@ jQuery(document).ready(function($) {
 			} else {	
 				if (klikni === 2) {
 					boksovi.off();
-					if ((okrenute[0].html().substring(90,92) === okrenute[1].html().substring(90,92)) &&
+					if ((okrenute[0].html().substring(98,100) === okrenute[1].html().substring(98,100)) &&
+						(okrenute[0].html().substring(100,101) !== okrenute[1].html().substring(100,101)) ||
+						(okrenute[0].html().substring(90,92) === okrenute[1].html().substring(90,92)) &&
 						(okrenute[0].html().substring(92,93) !== okrenute[1].html().substring(92,93)) ||
 						(okrenute[0].html().substring(94,96) === okrenute[1].html().substring(94,96)) &&
 						(okrenute[0].html().substring(96,97) !== okrenute[1].html().substring(96,97))) {
 							switch (true) {
 								case visinaEkrana >= 800 :
-									nedodirljivi.push(okrenute[0].html().substring(90,93),okrenute[1].html().substring(90,93));
+									nedodirljivi.push(okrenute[0].html().substring(98,101),okrenute[1].html().substring(98,101));
 									break;
 								case visinaEkrana < 800 && visinaEkrana >= 600 :	
 									nedodirljivi.push(okrenute[0].html().substring(90,93),okrenute[1].html().substring(90,93));
@@ -160,9 +162,9 @@ jQuery(document).ready(function($) {
 					} else {
 						setTimeout(function(){
 							okrenute[0].find('.nalicjeVeliko4').css('transform', 'perspective(200px) rotateY(0deg)');
-							okrenute[0].find('.liceVeliko').css('transform', 'perspective(200px) rotateY(180deg)');
+							okrenute[0].find('.licePoveliko').css('transform', 'perspective(200px) rotateY(180deg)');
 							okrenute[1].find('.nalicjeVeliko4').css('transform', 'perspective(200px) rotateY(0deg)');
-							okrenute[1].find('.liceVeliko').css('transform', 'perspective(200px) rotateY(180deg)');
+							okrenute[1].find('.licePoveliko').css('transform', 'perspective(200px) rotateY(180deg)');
 							okrenute[0].find('.nalicje4').css('transform', 'perspective(200px) rotateY(0deg)');
 							okrenute[0].find('.lice').css('transform', 'perspective(200px) rotateY(180deg)');
 							okrenute[1].find('.nalicje4').css('transform', 'perspective(200px) rotateY(0deg)');
