@@ -6,7 +6,11 @@
 		var w = window.innerWidth;
 		var visinaEkrana = window.innerHeight;
 			if (visinaEkrana >= 800) {
-				location.assign("mapa_gp_old.html");
+				if (w >= 1281) {
+					location.assign("mapa_gp_new.html");
+				} else {
+					location.assign("mapa_gp_old.html");
+				}
 			} else {
 				location.assign("mapa_gp.html");
 		}

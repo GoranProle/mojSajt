@@ -133,7 +133,9 @@ jQuery(document).ready(function($) {
 
 			var imaLiGa = $(this).html().substring(90,93);
 			var imaLiGa2 = $(this).html().substring(94,97);
-			if ((nedodirljivi.includes(imaLiGa) == true) || (nedodirljivi.includes(imaLiGa2) == true)) {
+			var imaLiGa3 = $(this).html().substring(98,101);
+			if ((nedodirljivi.includes(imaLiGa) == true) || (nedodirljivi.includes(imaLiGa2) == true) ||
+				(nedodirljivi.includes(imaLiGa3) == true)) {
 				okrenute.pop();
 				klikni--;
 			} else {	
