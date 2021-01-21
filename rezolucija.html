@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Proletova rezolucija ekrana</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="images/squirrel_pink_big.png">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="js/java.js"></script>
+</head>
+<body>
+	<ul class="glavni_meni">
+		<li><a href="index.html"><span class="fa fa-home" style="padding-left: 10px;margin-right: 15px;"></span>Povratak na početnu</a></li>
+	</ul>
+	
+	<div class="pozadinaDugmeta" style="text-align:center;margin-top: 140px">
+
+		<p style="margin-top: -30px">Pritisni dugme za prikaz visine i širine ovog prozora!</p>
+		<button onclick="myFunction()">Pritisni</button>
+		<p id="demo"></p>
+
+		<script>
+		function myFunction() {
+			var w = window.innerWidth;
+			var h = window.innerHeight;
+			document.getElementById("demo").innerHTML = "Širina: " + w + " piksela<br>Visina: " + h + " piksela";
+		}
+		</script>
+
+	</div>
+	<!-- logo -->
+	<p style="text-align: center; background-color: white; max-width: 600px; height: 30px; margin: 0 auto"><img src="images/logo_prole_software_2021.jpg"/></p>
+</body>
+</html>

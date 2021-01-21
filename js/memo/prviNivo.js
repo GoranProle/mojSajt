@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 	var visinaEkrana = window.innerHeight;
 	switch (true) {
 		case visinaEkrana >= 800 :
-			var wrapper = $('#wrapper').css({'height':'670px','max-width':'640px','margin-top':'40px'});
+			var wrapper = $('#wrapper').css({'height':'670px','max-width':'640px','margin-top':'60px'});
 			wrapper.append('<div class="naslov"><button class="dugmic" onclick="history.go(0)">Nova igra</button><div class="poruka"></div></div><div class="kontejnerVeliki"></div><div class="logoNovi"></div>');
 			var kontejner = $('.kontejnerVeliki');
 			var slicice = ['<img src="images/m/01a.jpg"/>','<img src="images/m/02a.jpg"/>','<img src="images/m/03a.jpg"/>','<img src="images/m/04a.jpg"/>',
@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
 				'<img src="images/m/17b.jpg"/>','<img src="images/m/18b.jpg"/>'];
 			break;
 		case visinaEkrana < 800 && visinaEkrana >= 600:
-			var wrapper = $('#wrapper').css({'height':'550px','max-width':'521px','margin-top':'-30px'});
+			var wrapper = $('#wrapper').css({'height':'550px','max-width':'521px','margin-top':'-10px'});
 			wrapper.append('<div class="naslov"><button class="dugmic" onclick="history.go(0)">Nova igra</button><div class="poruka"></div></div><div class="kontejner"></div><div class="logoNovi"></div>');
 			var kontejner = $('.kontejner');
 			var slicice = ['<img src="images/m/01e.jpg"/>','<img src="images/m/02e.jpg"/>','<img src="images/m/03e.jpg"/>','<img src="images/m/04e.jpg"/>',
@@ -32,7 +32,7 @@ jQuery(document).ready(function($) {
 				'<img src="images/m/17f.jpg"/>','<img src="images/m/18f.jpg"/>'];
 			break;
 		default :	
-			var wrapper = $('#wrapper').css({'height':'375px','max-width':'343px','margin-top':'-10px'});
+			var wrapper = $('#wrapper').css({'height':'375px','max-width':'343px','margin-top':'10px'});
 			wrapper.append('<div class="naslovMali"><button class="dugmic2" onclick="history.go(0)">Nova igra</button><div class="poruka2"></div></div><div class="kontejnerMali"></div><div class="logoNovi"></div>');
 			var kontejner = $('.kontejnerMali');
 			var slicice = ['<img src="images/m/01c.jpg"/>','<img src="images/m/02c.jpg"/>','<img src="images/m/03c.jpg"/>','<img src="images/m/04c.jpg"/>',
@@ -87,7 +87,7 @@ jQuery(document).ready(function($) {
     	var a = setInterval(function(){
     		vreme--;
     		if (vreme === 0 || kraj === 18) {
-    			boksovi.off();
+    			boksovi.unbind(); // boksovi.off();
     			clearInterval(a);
     			if (kraj === 18) {
     				$('.dugmic').append(' - Nivo 2');
@@ -140,7 +140,7 @@ jQuery(document).ready(function($) {
 				klikni--;
 			} else {	
 				if (klikni === 2) {
-					boksovi.off();
+					boksovi.unbind(); // boksovi.off();
 
 					//console.log(okrenute[0].html().substring(98,101));
 					//console.log(okrenute[1].html().substring(98,101));

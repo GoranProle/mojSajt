@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 	var visinaEkrana = window.innerHeight;
 	switch (true) {
 		case visinaEkrana >= 800 :
-			var wrapper = $('#wrapper2').css({'height':'670px','max-width':'640px','margin-top':'40px'});
+			var wrapper = $('#wrapper2').css({'height':'670px','max-width':'640px','margin-top':'60px'});
 			wrapper.append('<div class="naslov"><button class="dugmic" onclick="history.go(0)">Nova igra</button><div class="poruka"></div></div><div class="kontejnerVeliki"></div><div class="logoNovi"></div>');
 			var kontejner = $('.kontejnerVeliki');
 			var slicice = ['<img src="images/m/21a.jpg"/>','<img src="images/m/22a.jpg"/>','<img src="images/m/23a.jpg"/>','<img src="images/m/24a.jpg"/>',
@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
 			'<img src="images/m/37b.jpg"/>','<img src="images/m/38b.jpg"/>'];
 			break;
 		case visinaEkrana < 800 && visinaEkrana >= 600:
-			var wrapper = $('#wrapper2').css({'height':'550px','max-width':'521px','margin-top':'-30px'});
+			var wrapper = $('#wrapper2').css({'height':'550px','max-width':'521px','margin-top':'-10px'});
 			wrapper.append('<div class="naslov"><button class="dugmic" onclick="history.go(0)">Nova igra</button><div class="poruka"></div></div><div class="kontejner"></div><div class="logoNovi"></div>');
 			var kontejner = $('.kontejner');
 			var slicice = ['<img src="images/m/21e.jpg"/>','<img src="images/m/22e.jpg"/>','<img src="images/m/23e.jpg"/>','<img src="images/m/24e.jpg"/>',
@@ -32,7 +32,7 @@ jQuery(document).ready(function($) {
 			'<img src="images/m/37f.jpg"/>','<img src="images/m/38f.jpg"/>'];
 			break;
 		default :	
-			var wrapper = $('#wrapper2').css({'height':'375px','max-width':'343px','margin-top':'-10px'});
+			var wrapper = $('#wrapper2').css({'height':'375px','max-width':'343px','margin-top':'10px'});
 			wrapper.append('<div class="naslovMali"><button class="dugmic2" onclick="history.go(0)">Nova igra</button><div class="poruka2"></div></div><div class="kontejnerMali"></div><div class="logoNovi"></div>');
 			var kontejner = $('.kontejnerMali');
 			var slicice = ['<img src="images/m/21c.jpg"/>','<img src="images/m/22c.jpg"/>','<img src="images/m/23c.jpg"/>','<img src="images/m/24c.jpg"/>',
